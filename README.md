@@ -17,7 +17,7 @@
 
 
   
-  <img src="blob:https://imgur.com/26080c6d-7e1e-4a6f-b288-f37e85400ee2" width="100%"/>
+  <img src="https://i.imgur.com/mcsRTGN.jpeg" width="100%"/>
 
 
 
@@ -34,7 +34,6 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [V
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:DevAkhil/Crypto-Liquidation-API.git
-
+$ git clone https://github.com/DevAkhil/CountryAPI.git
 # Build and run the application
 $ F5 to run the application
