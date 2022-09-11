@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CountryAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CountryAPI.Controllers.CountryController.GetAll">
+             <summary>
+             Returns a list of coutries
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get api/Country/GetAll
+            
+             </remarks>
+             <returns>IEnumerable of country</returns>
+        </member>
+        <member name="M:CountryAPI.Controllers.CountryController.GetByRegion(System.String)">
+             <summary>
+             Returns a list of coutries matching provided region
+             </summary>
+              <param name="region">Region to search for (Asia, Africa, North America, South America, Antarctica, Europe, Australia)</param>
+             <remarks>
+             Sample request:
+            
+                 Get api/Country/GetByRegion/{region}
+            
+             </remarks>
+             <returns>IEnumerable of country</returns>
+        </member>
+        <member name="M:CountryAPI.Controllers.CountryController.GetByCountryCode(System.String)">
+             <summary>
+             Returns the country that matches the code provided 
+             </summary>
+              <param name="code">ISO 3166-1 alpha-3 Country code to search for (AUT, USA, QAT)</param>
+             <remarks>
+             Sample request:
+            
+                 Get api/Country/GetByCountryCode/{code}
+            
+             </remarks>
+             <returns>A country</returns>
+        </member>
+        <member name="T:CountryAPI.Models.Country">
+            <summary>
+            Country
+            </summary>
+        </member>
+        <member name="P:CountryAPI.Models.Country.Code">
+            <summary>
+            ALPHA-3 code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)
+            </summary>
+        </member>
+        <member name="P:CountryAPI.Models.Country.Name">
+            <summary>
+            Country name
+            </summary>
+        </member>
+        <member name="P:CountryAPI.Models.Country.Region">
+            <summary>
+            Country region (Asia, Africa, North America, South America,Antarctica, Europe, and Australia)
+            </summary>
+        </member>
+    </members>
+</doc>
